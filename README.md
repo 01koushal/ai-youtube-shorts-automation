@@ -86,6 +86,28 @@ http://localhost:5678
 ```
 
 ---
+## Installing FFmpeg
+
+This workflow uses FFmpeg to merge audio and video and to burn subtitles into the final video.
+
+### Windows
+Download FFmpeg from:
+https://ffmpeg.org/download.html
+
+Extract the archive and add the `bin` folder to your system PATH.
+
+Verify installation:
+
+ffmpeg -version
+
+### Docker (recommended)
+
+Install FFmpeg inside the container:
+
+docker exec -it n8n bash
+apt update
+apt install ffmpeg -y
+---
 
 # ⚠️ Setup Required
 
